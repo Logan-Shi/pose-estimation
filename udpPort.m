@@ -2,7 +2,7 @@ clear all;
 close all;
 instrreset;
 disp('Press Ctrl+C to stop collecting data!')
-s=serial('com4','baudrate',115200) ;fopen(s) ;%Open Com Port
+s = serialport('COM4',115200);
 f = 20; %DataFrequce
 t = 0;
 cnt = 1;
@@ -49,4 +49,3 @@ while(1)
             End = fread(s,3,'uint8');
     end
 end
-fclose(s);
