@@ -11,3 +11,9 @@ estimate object pose with laser sensor and IMU.
 > 3. run udpPort.m.  
 > 4. blue light remains on meaning successfull connection. Should blinking occur, restart IMU and try running udpPort.m again.   
 > 5. do remember to run fclose(s) after use to release COM port which should put blue light to blinking agian.  
+
+## TODO
+
+1. separate setup.m and running.m  
+2. import live data to matlab  
+3. set up orientation filter  
